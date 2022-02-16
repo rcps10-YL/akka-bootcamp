@@ -51,3 +51,5 @@ lj1090.inktomisearch.com - - [07/Mar/2004:17:18:41 -0800] "GET /twiki/bin/view/M
 Hello what time is dinner?
 I can hear the bell ringing
 maybe it's now :)
+I put a discard and yes this is still working !
+

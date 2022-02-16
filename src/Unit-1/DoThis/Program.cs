@@ -20,7 +20,9 @@ namespace WinTail
             IActorRef tailCoordinatorActor = MyActorSystem.ActorOf(tailCoordinatorProps, "tailCoordinatorActor");
 
             Props fileValidatorActorProps = Props.Create(() => new FileValidatorActor(consoleWriterActor));
-            IActorRef validationActor = MyActorSystem.ActorOf(fileValidatorActorProps, "validationActor");
+            //IActorRef validationActor = MyActorSystem.ActorOf(fileValidatorActorProps, "validationActor");
+            //IActorRef fileValidatorActor = MyActorSystem.ActorOf(fileValidatorActorProps, "validationActor"); // missed this when I was comparing files (unit 1, lesson 5)
+            IActorRef _ = MyActorSystem.ActorOf(fileValidatorActorProps, "validationActor"); // and this works
 
             Props consoleReaderProps = Props.Create<ConsoleReaderActor>();
             IActorRef consoleReaderActor = MyActorSystem.ActorOf(consoleReaderProps, "consoleReaderActor");
