@@ -54,7 +54,7 @@ namespace WinTail
         {
             return new OneForOneStrategy(
                 10, // maxNumberOfRetries
-                TimeSpan.FromSeconds(30), // withinTimeRange
+                TimeSpan.FromSeconds(30), // duration
                 x => // localOnlyDecider
                     {
                         //Maybe we consider ArithmeticException to not be application critical
